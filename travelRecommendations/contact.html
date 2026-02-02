@@ -3,23 +3,28 @@
     <head>
         <title>Travel Bloom</title>
         <div class="topnav">
-            <a class="active" href="#home">Home</a>
+            <a href="home.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
+            <a class="active" href="contact.html">Contact</a>
             <input id="searchInput" type="text" placeholder="Search...">
             <button type = "button" id="enterButton">Enter</button>
             <button type = "button" id="resetButton">Reset</button>
         </div>
     </head>
     <body>
-        <h1>About us</h1>
-        <h2>Why We Exist</h2>
-<p>We founded this company out of a genuine love for Madeira — its warm people, its rich culture, and its breathtaking natural beauty. After experiencing the island’s magic firsthand, we set out to build a travel service that ensures every visitor feels that same sense of wonder.</p>
-    <h2>What We Do</h2>
-    <p>We design curated travel experiences that go beyond the guidebook. From scenic levada walks and dolphin‑spotting cruises, to gourmet food tours and bespoke luxury escapes, we create itineraries shaped around what you love. Whether you’re seeking adventure, relaxation, culture, or a bit of everything, we’ll plan a trip that fits you perfectly.</p>
-<h2>How We Work</h2>
-<p>Our team partners directly with trusted local experts, family‑run businesses, and hidden‑gem accommodations across the island.</p>
+<form class="contact-form">
+  
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Your name" required>
 
-<h2>Our Promise</h2>
-<p>We’re committed to making every part of your Madeira journey seamless — from the moment you start planning to the moment you fly home. Expect thoughtful details, honest recommendations, and support every step of the way.</p>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="Your email" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+  <button type="submit">Submit</button>
+
+</form>
+
     </body>
